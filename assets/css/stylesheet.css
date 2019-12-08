@@ -339,11 +339,48 @@ input[type=submit]:hover {
     }
 
     footer {
-        width: 82vh;
+        width: 120vh;
         height: auto;
     }
 }
 
 @media screen and (max-width: 640px) {
-    
+    .container,
+    .main-container {
+        width: 489px;
+        margin-top: 10px;
+    }
+
+    #main-container {
+        padding-top: 0;
+    }
+
+    #logo {
+        width: 500px;
+    }
+
+    #masthead {
+        margin: 0;
+        padding: 0;
+        position: static;
+        width: 124%;
+    }
+
+    nav:last-child {
+        margin-right: 88px;
+    }
+
+    footer {
+        width: 100vh;
+    }
+
+    .work {
+        width: 333px;
+        margin-left: 44px;
+    }
+
+    .auth-image {
+        width: 400px;
+        margin-bottom: 10px;
+    }
 }
