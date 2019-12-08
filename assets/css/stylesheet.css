@@ -79,7 +79,7 @@ nav a {
     text-decoration: none;
     margin-left: 15px;
     display: inline-block;
-    border-left: 1px solid #efefef;
+    border-left: 1px solid #777;
     padding-left: 15px;
     line-height: 18px;
 }
@@ -125,16 +125,14 @@ footer {
 /* portfolio  */
 
 .work {
-    width: 274px;
+    width: 250px;
     overflow: auto;
     position: relative;
     float: left;
-    margin: 20px 0 25px;
+    margin: 20px 20px 25px;
 }
 
-.work:nth-child(even) {
-    margin-right: 40px;
-}
+
 .work img {
     width: 100%;
     border: 0 none;
@@ -200,4 +198,71 @@ input[type=submit]:hover {
 
 .hov:hover {
     font-weight: bold;
+}
+
+@media screen and (max-width: 980px) {
+    /* index */
+    * {
+        box-sizing: border-box;
+    }
+    .auth-image {
+        width: 250px;
+    }
+
+    .work {
+        width: 230px;
+        position: relative;
+        float: left;
+        margin: 20px;
+        margin-right: 0 none;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .main-container {
+        width: 650px;
+        float: left;
+        margin-left: 20px;
+        position: relative;
+    }
+
+    #logo {
+        margin-left: 15px;
+    }
+
+    nav {
+        float: right;
+        margin-top: 25px;
+    }
+    
+    nav a {
+        color: #999;
+        text-decoration: none;
+        margin-left: 15px;
+        display: inline-block;
+        border-left: 1px solid grey;
+        padding-left: 15px;
+        line-height: 18px;
+        font-size: 16px;
+    }
+    
+    nav a:first-child {
+        border-left: 0 none;
+    }
+    
+    nav a:last-child {
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 640px) {
+    
 }
